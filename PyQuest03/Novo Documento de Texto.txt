@@ -1,3 +1,0 @@
-cod_func -> {nome, cargo, sexo_func, admissao_func, cod_setor}
-cargo -> {salario, cbo}
-cod_setor -> {nome_setor, localizaçao_setor, chefe_setor}
