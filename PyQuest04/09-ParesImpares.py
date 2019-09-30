@@ -2,10 +2,10 @@
 qntd_impar = 0
 qntd_par = 0
 qntd_total = 0
-print('Digite 999 para parar a qualquer momento.')
+print('Digite 000 para parar a qualquer momento.')
 while True:
     num = int(input('Insira o numero: '))
-    if num == 999:
+    if num == 000:
         break
     elif (num % 2) == 1 :
         qntd_impar += 1
