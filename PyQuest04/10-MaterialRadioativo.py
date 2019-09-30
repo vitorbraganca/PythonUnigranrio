@@ -1,6 +1,6 @@
 tempo = 0
 massa = float(input('Insira a massa do material em gramas: '))
-while massa >= 500:
+while massa >= 0.5:
     tempo += 50
     massa =/ 2
 min = tempo / 60
