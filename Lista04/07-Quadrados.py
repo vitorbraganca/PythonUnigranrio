@@ -8,7 +8,7 @@ def linha(espaco, titulo):  # Criando uma funcao para impressao de linha (manter
 
 # Codigo principal
 quadrados = []
-numeros = [int(input(f'Numero na posicao {i+1}: ')) for i in range(5)]  # Criando lista utilizando compreensao de listas
+numeros = [int(input(f'Numero na posicao {i+1}: ')) for i in range(10)]  # Criando lista utilizando compreensao de listas
 i = 0
 for i in numeros:
     index = numeros.index(i)
