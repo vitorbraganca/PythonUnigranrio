@@ -5,7 +5,7 @@ def linha(espaco, titulo): # Criando uma funcao para impressao de linha (manter 
         print('-='*espaco)
 
 relacao = []  # Criando um vetor vazio para relacao das pessoas com mais de 1.7m
-for i in range(3):
+for i in range(50):
     nome = input('Digite o nome: ')  # Lendo o nome
     altura = float(input('Digite a altura em metros: '))  # Lendo altura
     if altura > 1.7:
