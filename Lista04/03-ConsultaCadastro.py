@@ -20,7 +20,7 @@ def consulta():  # Funcao para consulta de dados a partir do codigo unico
 
 # Codigo principal        
 cadastrados = []
-for i in range(5):
+for i in range(100):
     codigo = int(input('Codigo: '))  # Leitura codigo unico
     nome = input('Nome: ')  # Leitura nome
     telefone = input('Telefone: ')  # Leitura telefone
