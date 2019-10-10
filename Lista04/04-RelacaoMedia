@@ -1,0 +1,31 @@
+# Funcoes
+def linha(espaco, titulo, dupla):  # Criando uma funcao para impressao de linha (manter o codigo limpo, visto que se repete algumas vezes)
+    print('-='*espaco)
+    if (titulo != ' ') and (dupla != 0):
+        print(titulo)
+        print('-='*espaco)
+    elif (titulo != ' ') and (dupla == 0):
+        print(titulo)
+
+
+# Codigo principal
+alunos = []
+notas = []
+for i in range(10):  # Laco de repeticao para ler os dados dos alunos 10 vezes
+    nome = input('Digite o nome do aluno: ')  # Leitura nome do aluno
+    while True:  # Laco de repeticao para evitar medias negativas/acima de 10.
+        media = float(input('Digite a media do aluno: '))  # Leitura media
+        if media < 0:
+            print('Media nao pode ser negativa.')
+        elif media > 10:
+            print('Media nao pode ser maior de 10.')
+        else:
+            break  # Quebrando o laco, se a media estiver entre 0 e 10
+    alunos.append(nome)  # Adicionando os nomes a lista de alunos
+    notas.append(media)  # Adicionando as notas a lista de notas
+media_turma = sum(notas) / len(alunos)  # Retornando o valor da media da turma, pela soma de notas/quantidade de alunos
+linha(25, f'Media da turma: {media_turma:2f}', 1)  # Impressao da media da turma
+for c in range(len(alunos)):  # Testar condicao da media do aluno maior que media da turma
+    if notas[c] > media_turma:
+        print(f'Aluno: {alunos[c]} - Media: {notas[c]}')  # Impressao de alunos com medias superiores a media da turma
+linha(25, ' ', 0)
