@@ -14,20 +14,18 @@ while True:
     OPÇÃO: """))
         if (opcao == 100) or (opcao == 101):
             valor += 5.2
-            print('Valor parcial: {:.2f}'.format(valor))
             break
         elif opcao == 102:
             valor+= 7.3
-            print('Valor parcial: {:.2f}'.format(valor))
             break
         elif opcao == 103:
             valor+= 5.0
-            print('Valor parcial: {:.2f}'.format(valor))
             break
         else:
-            print('Valor parcial: {:.2f}'.format(valor))
+            print('Item invalido. Nada acrescentado.')
             break
+    print('Valor parcial: R${:.2f}'.format(valor))
     repetir = input('Deseja adicionar algo mais? |SIM (s) ou NAO (n)|:   ')
     repetir = repetir.upper()
     if (repetir == 'NAO') or (repetir == 'N'): break
-print('Valor total: {:.2f}'.format(valor))
+print('Valor total: R${:.2f}'.format(valor))
